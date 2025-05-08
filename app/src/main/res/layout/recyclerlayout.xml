@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:padding="0.00001dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <LinearLayout
     android:layout_marginTop="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="17dp"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp">
 
     <TextView
         android:id="@+id/tvnama"
@@ -21,5 +29,5 @@
         android:layout_height="wrap_content"
         android:text="stadium"
         android:textSize="14sp"/>
-
+</LinearLayout>
 </LinearLayout>
