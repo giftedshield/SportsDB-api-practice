@@ -5,25 +5,25 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PremiereRecycle">
+    tools:context=".mainMenu">
 
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/rvPrimer"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="50dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    android:visibility="gone"/>
-
-    <ProgressBar
-        android:id="@+id/pbPrimer"
+    <Button
+        android:id="@+id/btnLaManchaland"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="La Manchaland"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="50dp" />
 
+    <Button
+        android:id="@+id/btnPrimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priemere"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="50dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

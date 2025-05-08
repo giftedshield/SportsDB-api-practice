@@ -3,9 +3,7 @@
     import android.util.Log;
     import android.view.View;
     import android.widget.ProgressBar;
-    import android.widget.Toast;
 
-    import androidx.activity.EdgeToEdge;
     import androidx.appcompat.app.AppCompatActivity;
     import androidx.recyclerview.widget.LinearLayoutManager;
     import androidx.recyclerview.widget.RecyclerView;
@@ -20,10 +18,8 @@
     import retrofit2.Response;
     import retrofit2.Retrofit;
     import retrofit2.converter.gson.GsonConverterFactory;
-    import retrofit2.http.GET;
-    import retrofit2.http.Query;
 
-    public class MainActivity extends AppCompatActivity {
+    public class PremiereRecycle extends AppCompatActivity {
         private ProgressBar pbProgress;
         private RecyclerView recyclerView;
         private mahoraga adapter;
@@ -35,8 +31,8 @@
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
-            recyclerView = findViewById(R.id.mainRecyclerView);
-            pbProgress = findViewById(R.id.pbProgress);
+            recyclerView = findViewById(R.id.rvPrimer);
+            pbProgress = findViewById(R.id.pbPrimer);
 
             adapter = new mahoraga(teamList);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
